@@ -1,20 +1,78 @@
 /* Global variables */
 
 :root {
-    --page-background: aliceblue;
+  /* colors */
+  --page-background: aliceblue;
+  --topnav-background: aqua;
+
+  /* spacing */
+  --content-margin-left: 5%;
+  --content-margin-right: var(--content-margin-left);
 }
 
 /* testing outline */
-/* * {
-    outline: 1px solid red;
-} */
+* {
+  outline: 1px solid red;
+}
+
+
 
 
 /* element styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: 'Roboto','Verdana', sans-serif;
   margin: 0;
   padding: 0;
   background-color: var(--page-background);
+}
+
+
+
+/* page classes */
+
+.page-section {
+  width: 100%;
+  padding-left: var(--content-margin-left);
+  padding-right: var(--content-margin-right);
+}
+
+
+
+
+/* top nav */
+
+#topnav{
+  background-color: var(--topnav-background);
+}
+
+#topnav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px;
+}
+
+
+
+
+/* hero */
+
+#hero {
+  background-color: lightblue;
+}
+
+#hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 300px;
 }
